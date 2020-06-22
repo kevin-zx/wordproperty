@@ -34,6 +34,8 @@ var lowConfidenceWords = []string{
 	"种类",
 	"分类",
 	"类型",
+	"问题",
+	"购买",
 }
 
 var judgeSuffixes = []string{
