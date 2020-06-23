@@ -42,6 +42,7 @@ var judgeSuffixes = []string{
 	"好",
 	"吗",
 	"?",
+	"？",
 }
 
 // EnvWordProperty the function is using to judge word whether environment or not,
