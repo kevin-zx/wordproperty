@@ -25,7 +25,7 @@ var judgeWords = []string{
 
 var lowConfidenceWords = []string{
 	"正确",
-	"卖",
+	//"卖",
 	"一般",
 	"不要",
 	"区别",
@@ -36,6 +36,7 @@ var lowConfidenceWords = []string{
 	"类型",
 	"问题",
 	"购买",
+	"知识",
 }
 
 var judgeSuffixes = []string{
