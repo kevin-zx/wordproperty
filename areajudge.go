@@ -20,14 +20,17 @@ type Area struct {
 	PinYin    string `json:"pin_yin"`
 }
 
-func IsChinaArea(key string) (bool, float64, Area) {
+func IsChinaArea(key string) (bool, float64, []Area) {
 	confidence := 1.0
+	isArea := false
+	var jAreas []Area
 	for _, area := range areas {
 		if strings.Contains(key, area.ShortName) {
-			return true, confidence, area
+			jAreas = append(jAreas, area)
+			isArea = true
 		}
 	}
-	return false, 0, Area{}
+	return isArea, confidence, jAreas
 }
 
 var areas []Area
